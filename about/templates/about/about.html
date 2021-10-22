@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<!--- Header --->
+<div class="container-fluid">
+    <div class="row-products">
+        <div class="col text-center mt-3 mb-3 pb-1">
+            <h2 class="logo-font">About Us</h2>
+            <img src="{{ MEDIA_URL }}flowers.png" alt="flowers" class="head-flowers"
+                style="position: absolute;right:0;top:-85px">
+        </div>
+    </div>
+    <!--- About image --->
+    <div class="container">
+        <div class="row align-items-center my-4">
+            <div class="col-12 col-md-6">
+                <div class="image-container my-4">
+                    <img src="{{ MEDIA_URL }}about.jpg" alt="about-photo" width="550" height="400" class="about-image">
+                </div>
+            </div>
+            <!--- About text container --->
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="about-details-container mb-5 mt-md-5">
+                    <h2 class="about-heading">Our Story</h2>
+                    <div>
+                        <img src="{{ MEDIA_URL }}seperater.png" alt="no-image" class="nav-center-2">
+                    </div>
+                    <p class="about-text">Hi! We are Emily and Sarah! We met in college while we were both
+                        studying Interior Design. We went our separate ways for a couple of years, until we
+                        reconnected this year and decided to start our small buisness together.
+                        We also make house calls to help you with decorating your home, you can book with us through our
+                        contact page.
+                        We have always had a passion for redecorating on a budget. We want to help you too!
+                        Our shop is small but constantly growing, we hand pick our items every week and keep up with the
+                        latest trends. We also have our blog where we post fun ideas on DIY projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container hp-section-1-heading">
+        <h2 class="home-decor">Our Success</h2>
+        <h3 class="new">Testimonials</h3>
+        <img src="{{ MEDIA_URL }}seperater.png" alt="no-image" class="center">
+    </div>
+    <!--- Testimonials --->
+    <div class="container mt-4">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption">
+                        <p class="test-text">I have bought three pieces so far from STILE Boutique. Everything has been amazing
+                            quality. The pictures are true to detail and very pretty.
+                            Delivery is fast also. </p> <img src="https://i.imgur.com/lE89Aey.jpg" alt="nick-doe">
+                        <div id="image-caption-1">Nick Doe</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <p class="test-text">I contacted Sarah and Emily a couple of weeks ago as I had just
+                            moved home and wanted something out of my comfort zone. They had so many great
+                            recommendations and ideas. I am so happy with how my House turned out.
+                        </p> <img src="https://i.imgur.com/QptVdsp.jpg" class="img-fluid" alt="michael-greves">
+                        <div id="image-caption-2">Michael Greves</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <p class="test-text">I have known the two girls for a couple of years. We have worked on a few projects
+                            together. It's always a pleasure working with them. They are very friendly and down to earth
+                            people.
+                            Looking forward to working with them in the future.
+                        </p> <img src="https://i.imgur.com/jQWThIn.jpg" class="img-fluid" alt="harry-mon">
+                        <div id="image-caption-3">Harry Mon</div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev"> <i class="fas fa-arrow-left"></i>
+            </a> <a class="carousel-control-next" href="#demo" data-slide="next"> <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
