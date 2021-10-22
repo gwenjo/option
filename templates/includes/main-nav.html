@@ -1,0 +1,30 @@
+<!-- Main Nav items -->
+<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item d-block d-none d-lg-none">
+            <a class="nav-link-main" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link-main" href="#" id="shop-link" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Shop <span class="sr-only">(current)</span></a>
+            <div class="dropdown-menu border-0" aria-labelledby="shop-link">
+                <a href="{% url 'products' %}?category=decor" class="dropdown-item">Decor</a>
+                <a href="{% url 'products' %}?category=pillows" class="dropdown-item ">Pillows</a>
+                <a href="{% url 'products' %}?category=mirrors" class="dropdown-item ">Mirrors</a>
+                <a href="{% url 'products' %}?category=furniture" class="dropdown-item ">Furniture</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link-main" href="{% url 'about' %}">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link-main" href="{% url 'post' %}">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link-main" href="{% url 'contact' %}">Contact</a>
+        </li>
+    </ul>
+</div>
