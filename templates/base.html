@@ -50,7 +50,7 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Fancy Day design {% block extra_title %}{% endblock %}</title>
+    <title>Fancy Day Design {% block extra_title %}{% endblock %}</title>
 </head>
 
 <body>
@@ -78,7 +78,7 @@
             </div>
             <div class="col-12 col-lg-4 col-sm-4 my-auto py-1 py-lg-0 text-center">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h1 class="my-0" id="logo"> Fancy Day Design</h1>
+                    <h1 class="my-0" id="logo"> STILE</h1>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -91,10 +91,10 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="" class="dropdown-item">Product Management</a>
-                            <a href="" class="dropdown-item">Blog Management</a>
+                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            <a href="{% url 'add_blog' %}" class="dropdown-item">Blog Management</a>
                             {% endif %}
-                            <a href="" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item text-rosa-light">Logout</a>
                             {% else %}
                             <a href="{% url 'account_signup' %}" class="dropdown-item text-rosa-light">Register</a>
@@ -169,4 +169,5 @@
 
 
 </body>
+
 </html>

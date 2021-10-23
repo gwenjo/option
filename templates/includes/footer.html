@@ -1,30 +1,49 @@
-<!-- Main Nav items -->
-<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item d-block d-none d-lg-none">
-            <a class="nav-link-main" href="{% url 'home' %}" id="home-link">
-                Home
-            </a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link-main" href="#" id="shop-link" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">Shop <span class="sr-only">(current)</span></a>
-            <div class="dropdown-menu border-0" aria-labelledby="shop-link">
-                <a href="{% url 'products' %}?category=decor" class="dropdown-item">Decor</a>
-                <a href="{% url 'products' %}?category=pillows" class="dropdown-item ">Pillows</a>
-                <a href="{% url 'products' %}?category=mirrors" class="dropdown-item ">Mirrors</a>
-                <a href="{% url 'products' %}?category=furniture" class="dropdown-item ">Furniture</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+<footer>
+    <div id="footer">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row footer-row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 no-padding">
+                        <a href="{% url 'products' %}" class="footer-link">Shop</a>
+                        <a href="{% url 'about' %}" class="footer-link">About <span class="footer-link-brand">US</span></a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 no-padding order-md-3 order-lg-2">
+                        <a href="{% url 'post' %}" class="footer-link">Blog</a>
+                        <a href="{% url 'contact' %}" class="footer-link mb-15-mob">Contact</a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 no-padding order-md-2 order-lg-3 mt-2">
+                        <p class="footer">© 2021 STILE</p>
+                        <p>432 Stephen Street</p>
+                        <p class="mb-7">Dublin 6</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 no-padding order-md-4 order-lg-4">
+                        <div class="social-media">
+                            <div class="div-footer-some">
+                                <a href="https://www.facebook.com" class="some-link" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                            <div class="div-footer-some">
+                                <a href="https://www.instagram.com" class="some-link" target="_blank">
+                                    <i class="fab fa-instagram fa-lg"></i>
+                                </a>
+                            </div>
+                            <div class="div-footer-some">
+                                <a href="https://www.pinterest.com" class="some-link" target="_blank">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </div>
+                            <div class="div-footer-some">
+                                <a href="https://www.youtube.com" class="some-link" target="_blank">
+                                    <i class="fab fa-youtube-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-line">
+                </div>
             </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link-main" href="{% url 'about' %}">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link-main" href="{% url 'post' %}">Blog</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link-main" href="{% url 'contact' %}">Contact</a>
-        </li>
-    </ul>
-</div>
+        </div>
+    </div>
+</footer>
