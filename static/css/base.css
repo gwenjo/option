@@ -145,14 +145,14 @@ span.badge.rounded-pill {
 
 .cta-white, .cta-black:hover {
     background-color: var(--color-green);
-    color: var(--color-white);
+    color: #fff9f9;
     text-decoration: none;
     border-radius: 0;
 }
 
 .cta-black, .cta-white:hover {
     background-color: var(--color-brown)!important;
-    color: var(--color-white);
+    color: #fff9f9;
     text-decoration: none;
     border-radius: 0;
 }
@@ -183,7 +183,7 @@ span.badge.rounded-pill {
     width: 80%;
 }
 #homepage-header {
-    background: url('/media/homepage/homepage.jpg') no-repeat center;
+    background: url('/media/wedding_theme.jpeg') no-repeat center;
     height: 800px;
     background-size: cover;
     margin-bottom: 4.5rem;
@@ -321,13 +321,14 @@ h2 {
 
 .div-product-card-img img, .div-category-card img {
     width: 100%;
+    border: 1px solid #c19c77;
 }
 
 /*------ Footer ------*/
 
 footer {
-    background-color: var(--color-green);
-    color: var(--color-white);
+    background-color: #c19c77;
+    color: #fff9f9;
     min-height: 130px;
     margin-top: 4rem;
 }
@@ -335,13 +336,13 @@ footer {
 .footer-link {
     text-transform: uppercase;
     display: block;
-    color: var(--color-white);
+    color: #fff9f9;
     padding: .2rem;
 }
 
 .footer-link:hover {
     text-decoration: underline;
-    color: var(--color-white);
+    color: #fff9f9;
 }
 
 .footer-link-brand {
@@ -374,14 +375,14 @@ footer p {
 }
 
 .div-footer-some:hover {
-    border-bottom: 1px solid var(--color-white);
+    border-bottom: 1px solid #fff9f9;
 }
 
 .fa-youtube-square:before,
 .fa-pinterest-p:before,
 .fa-instagram:before,
 .fa-facebook-f:before {
-    color: var(--color-white);
+    color: #fff9f9;
 }
 
 /*------ Products Page ------*/
@@ -461,7 +462,7 @@ footer p {
 }
 
 .card-header {
-    background-color: var(--color-white);
+    background-color: #fff9f9;
     border-bottom: var(--border-black);
     cursor: pointer;
     padding-left: 0;
@@ -549,12 +550,12 @@ footer p {
 
 .btn-block {
     background-color: var(--color-brown);
-    color: var(--color-white);
+    color: v#fff9f9;
 }
 
 .btn-block:hover {
     background-color: var(--color-green);
-    color: var(--color-white);
+    color: #fff9f9;
 }
 
 .arrow-up {
@@ -708,7 +709,7 @@ input[type=text],input[type=email], select, textarea {
 
 button, .cta-comment {
   background-color: var(--color-brown);
-  color: white;
+  color: #fff9f9;
   text-transform: uppercase;
   padding: 10px 20px;
   border: none;
@@ -751,12 +752,12 @@ input[type=submit]:hover {
     border: 1px solid #000000;
     padding: .6rem;
     text-transform: uppercase;
-    color: var(--color-white);
+    color: #fff9f9;
     background-color: var(--color-brown);
 }
 
 .read-text:hover {
-    color: var(--color-white);
+    color: #fff9f9;
     background-color: var(--color-green);
 
 }
@@ -914,7 +915,7 @@ select option[value=""] {
 .btn-file {
     position: relative;
     overflow: hidden;
-    background-color: var(--color-white);
+    background-color: #fff9f9;
     color: var(--color-black);
     border: solid 1px black;
 }
@@ -962,7 +963,7 @@ select option[value=""] {
 
 .btn-outline-secondary:hover {
     background-color: var(--color-green);
-    color: var(--white);
+    color: #fff9f9;
 }
 
 .btn-secondary {
@@ -974,7 +975,7 @@ select option[value=""] {
 
 .btn-secondary:hover {
     background-color: var(--color-light-green);
-    color: var(--white);
+    color: #fff9f9;
     border: solid 2px var(--color-light-green);
 }
 
@@ -997,7 +998,7 @@ select option[value=""] {
 
 .text-decoration-none {
     border: 0!important;
-    background-color: var(--color-white);
+    background-color: #fff9f9;
 }
 
 /*------ Responsiveness ------*/
