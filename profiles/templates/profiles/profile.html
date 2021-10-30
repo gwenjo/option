@@ -7,8 +7,6 @@
     <div class="row-products">
         <div class="col text-center mt-3 mb-3 pb-1">
             <h2 class="logo-font">Profile</h2>
-            <img src="{{ MEDIA_URL }}flowers.png" alt="flowers" class="head-flowers"
-                style="position: absolute;right:0;top:-85px">
         </div>
     </div>
 </div>
@@ -31,11 +29,11 @@
     <div class="row">
         <div class="col-12">
             <p class="mb-0">
-                Welcome, {{ user.username }}!
+                Welcome to your profile page, {{ user.username }}!
                 <br>
-                Happy shopping!
+                Take your time and look at all the products we have to offer. 
+                If you have any questions feel free to get in touch via our contact form.
                 <br>
-                Fancy Day Design
             </p>
             <div class="div-profile-action-ctas pt-md-5 pb-md-5 mb-3 pt-3 pb-3">
                 <a href="{% url 'order_history' %}" class="cta cta-white">See order history</a>

@@ -4,16 +4,16 @@
         |
         <a href="{% url 'products' %}" class="tabs-link">Shop</a>
         |
-        <!-- category tabs -->
+<!-- Category Tabs -->
         {% if current_categories %}
         {% for category in current_categories %}
         <span class="active-tabs">{{ category.friendly_name }} ({{ products|length}})</span>
         {% endfor %}
-        <!-- search query tabs-->
+<!-- search Query Tabs-->
         {% elif search_term %}
         <span class="active-tabs">Results for the search term: {{ search_term|truncatechars:25 }}
             ({{ products|length}})</span>
-        <!-- product tag tabs -->
+<!-- Product Tag Tabs -->
         {% elif product_tag %}
         <span class="active-tabs">{{ product_tag }} products ({{ products|length}})</span>
         {% else %}

@@ -37,9 +37,8 @@
             <!-- No previous orders -->
             {% else %}
             <p class="profile-intro-p">
-                Looks like you haven't ordered anything yet, {{ user.username }}!
-                Check out our shop for amazing boutique pieces. You can also check out our blog, where we give great
-                inspiration for styling your home.
+                It looks like you haven't ordered anything yet, {{ user.username }}.</br>
+                View our products page to add products to your basket
             </p>
             <div class="div-profile-order-history-ctas pt-md-4 pb-md-4 mb-3 pt-4 pb-4">
                 <a href="{% url 'products' %}" class="cta cta-black mr-2">Shop here</a>

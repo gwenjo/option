@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Great+Vibes&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cookie&family=Open+Sans:wght@200&display=swap');
 
-/*------ Global ------*/
+/*----------------- Overal Body-------------------*/
 
 :root {
-    --font-playfair-display: 'Playfair Display', sans-serif;
-    --font-great-vibes: 'Great Vibes', sans-serif;
-    --font-poppins: 'Poppins' sans-serif;
+    --font-playfair-display: 'Archivo Narrow', sans-serif;
+    --font-great-vibes: 'Cookie', sans-serif;
+    --font-poppins: 'Open Sans' sans-serif;
     --color-black: #000000;
     --color-olive: #737C74;
     --color-light-black: #313639;
@@ -18,12 +18,12 @@
 }
 
 body {
-    font-family: var(--font-playfair-display);
+    font-family: 'Archivo Narrow', sans-serif;
     overflow-x: hidden;
 }
 
 h1 {
-    font-family: var(--font-playfair-display);
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 h2 {
@@ -43,7 +43,7 @@ main {
     margin-right: 0;
 }
 
-/*------ Nav Bar ------*/
+/*-------------------- Nav Bar ------------------*/
 
 .nav-link {
     text-transform: uppercase;
@@ -128,7 +128,7 @@ span.badge.rounded-pill {
 
 }
 
-/*------ Buttons ------*/
+/*-------------------- Buttons ---------------------*/
 
 .cta {
     font-size: 14px;
@@ -141,14 +141,14 @@ span.badge.rounded-pill {
 
 .cta-white, .cta-black:hover {
     background-color: #c19c77;
-    color: #fff9f9;
+    color: black;
     text-decoration: none;
     border-radius: 0;
 }
 
 .cta-black, .cta-white:hover {
     background-color: #fff3e0 !important;
-    color: #fff9f9;
+    color: black;
     text-decoration: none;
     border-radius: 0;
 }
@@ -171,7 +171,7 @@ span.badge.rounded-pill {
     background-color: #fff3e0 !important;
 }
 
-/*------ Homepage ------*/
+/*-------------------------- Homepage --------------------------*/
 
 .border-search {
     border: none;
@@ -201,14 +201,14 @@ span.badge.rounded-pill {
     font-weight: 100;
     font-size: 70px;
     color: var(--color-light-black);
-    font-family: var(--font-great-vibes);
+    font-family: 'Cookie', sans-serif;
 }
 
 #hp-header {
     font-weight: 100;
     font-size: 70px;
     color: var(--color-light-black);
-    font-family: var(--font-great-vibes);
+    font-family: 'Cookie', sans-serif;
     line-height: 1rem;
 }
 
@@ -216,11 +216,11 @@ span.badge.rounded-pill {
     margin-top: 20%;
 }
 
-/*------ Homepage/section-1 ------*/
+/*-------------------- Homepage/section-1 -------------------*/
 
 .home-decor{
     text-align: center;
-    font-family: var(--font-great-vibes);
+    font-family: 'Cookie', sans-serif;
     color: var(--color-light-black);
     font-size: 2.6rem;
 }
@@ -265,7 +265,7 @@ span.badge.rounded-pill {
     border: 1px solid #c19c77;
 }
 
-/*------ Home Section 2 ------*/
+/*------------------- Home Section 2 --------------------*/
 
 .section-2-p {
     font-size: 1.2rem;
@@ -311,7 +311,7 @@ h2 {
     font-size: 2.5rem;
 }
 
-/*------ Footer ------*/
+/*------------------------ Footer ---------------------*/
 
 footer {
     background-color: #c19c77;
@@ -372,7 +372,7 @@ footer p {
     color: #fff9f9;
 }
 
-/*------ Products Page ------*/
+/*--------------------- Products Page ------------------*/
 
 .logo-font {
     letter-spacing: .1rem;
@@ -403,7 +403,7 @@ footer p {
 sort-select-wrapper {
     border: 1px solid #c19c77;
 }
-/*------ Products Page/Sort By Box ------*/
+/*--------------- Products Page/Sort By Box ---------------*/
 
 #sort-selector {
     height: 45px;
@@ -423,7 +423,7 @@ sort-select-wrapper {
     justify-content: flex-end;
 }
 
-/*------ Products Page/Title Tabs------*/
+/*-------------- Products Page/Title Tabs------------------*/
 
 .title_tabs {
     margin-top: 50px;
@@ -445,11 +445,7 @@ sort-select-wrapper {
     font-size: 1.1rem;
 }
 
-/*------ Products Details Page ------*/
-
-#accordion {
-    margin: 35px auto 50px auto;
-}
+/*-------------- Products Details Page -----------------*/
 
 .card {
     border: none;
@@ -476,12 +472,7 @@ sort-select-wrapper {
     color: black;
 }
 
-.accordion-card-paragraph {
-    font-size: 14px;
-    line-height: 170%;
-}
-
-/*------ Empty Cart Page ------*/
+/*------------------ Empty Cart Page ----------------*/
 
 .empty-cart {
     margin: auto;
@@ -497,7 +488,7 @@ sort-select-wrapper {
     margin-left: 5rem;
 }
 
-/*------ Shopping Cart ------*/
+/*----------------------- Shopping bag -------------------*/
 
 .div-line-item {
     margin: 0 auto 50px auto;
@@ -525,7 +516,7 @@ sort-select-wrapper {
     margin-bottom: .3rem;
 }
 
-/*------ Toasts ------*/
+/*----------------------- Toasts ----------------------*/
 
 .message-container {
     position: fixed;
@@ -569,7 +560,7 @@ sort-select-wrapper {
     overflow-y: auto;
 }
 
-/*------ Checkout page ------*/
+/*-------------------- Checkout page ------------------*/
 
 .fieldset-label {
     position: relative;
@@ -596,7 +587,7 @@ fieldset .form-control, #card-element {
     font-weight: 400;
 }
 
-/*------ About page ------*/
+/*-------------------- About page ----------------------*/
 
 .about-heading {
     text-transform: uppercase;
@@ -618,6 +609,7 @@ fieldset .form-control, #card-element {
 }
 
 /* taken from https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
 #demo {
     background:#fff9f9;
     max-width: 800px;
@@ -666,7 +658,7 @@ fieldset .form-control, #card-element {
     opacity: unset;
 }
 
-/*------ Contact page ------*/
+/*----------------------- Contact page ---------------------*/
 
 div#map {min-height: 360px;}
 
@@ -691,6 +683,7 @@ div#map {min-height: 360px;}
 }
 
 /*------ Form taken from W3schools https://www.w3schools.com/howto/howto_css_contact_form.asp ------*/
+
 input[type=text],input[type=email], select, textarea {
   width: 100%; 
   padding: 12px; 
@@ -731,7 +724,7 @@ input[type=submit]:hover {
     margin: 17px auto;
 }
 
-/*------ Blog page ------*/
+/*-------------------- Blog page -----------------------*/
 
 .h2-style {
     margin: 65px auto 20px auto;
@@ -781,7 +774,7 @@ input[type=submit]:hover {
     border: 1px solid #E6EFD6;
 }
 
-/*------ Stripe ------*/
+/*-------------------- Stripe ----------------------*/
 
 .fieldset-label {
     position: relative;
@@ -802,7 +795,7 @@ fieldset .form-control, #card-element  {
     padding:1rem;
 }
 
-/*------ Checkout success ------*/
+/*----------------------- Checkout success ----------------*/
 
 .h2-order-confirmation {
     font-size: 1.3rem;
@@ -823,7 +816,7 @@ select option[value=""] {
     color: grey !important;
 }
 
-/*------ Overlay ------*/
+/*---------------------- Overlay -------------------------*/
 
 #loading-overlay {
     display: none;
@@ -855,7 +848,7 @@ select option[value=""] {
     margin-top: 50px;
 }
 
-/*------ Allauth templates ------*/
+/*--------------------- Allauth templates --------------*/
 
 .div-login-form {
     margin-top: .7rem;
@@ -885,7 +878,7 @@ select option[value=""] {
 }
 
 
-/*------ Profile page ------*/
+/*---------------------- Profile page ------------------*/
 
 .profile-container {
     max-width: 650px;
@@ -906,7 +899,7 @@ select option[value=""] {
     text-align: center!important;
 }
 
-/* Product Form */
+/* ----------------------- Product Form ---------------- */
 
 .btn-file {
     position: relative;
@@ -950,7 +943,7 @@ select option[value=""] {
     width: 1.5rem;
 }
 
-/*------ Reviews ------*/
+/*------------------------- Reviews --------------------------*/
 
 .btn-outline-secondary {
     color: black;
@@ -997,7 +990,7 @@ select option[value=""] {
     background-color: #fff9f9;
 }
 
-/*------ Responsiveness ------*/
+/*----------------------- Responsiveness --------------------*/
 
 @media (max-width: 375px){
 .navbar-light .navbar-toggler {
@@ -1119,6 +1112,7 @@ select option[value=""] {
     margin-top: 15px;
     width:100%;
 }
+
 .shopping-cta, .checkout-cta {
     width: 80%;
 }
@@ -1244,14 +1238,14 @@ select option[value=""] {
     }
 }
 
-/* Slightly larger container on xl screens */
+/* -----------Slightly larger container on xl screens------------*/
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
   }
 }
 
-/* Allauth form formatting */
+/* -----------------Allauth form formatting--------------------- */
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
