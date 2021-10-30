@@ -2,13 +2,13 @@
 
 <!doctype html>
 <html lang="en">
+
 <head>
 
     {% block meta %}
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="Description" content="A special moment deserves a Fancy Day Design."/>
     {% endblock %}
 
     {% block extra_meta %}
@@ -19,12 +19,14 @@
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
         <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cookie&family=Open+Sans:wght@200&display=swap">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
     {% endblock %}
 
     {% block extra_css %}
     {% endblock %}
 
-<!-- Import jQuery / Bootstrap JavaScript-->
     {% block corejs %}
         <script src="https://kit.fontawesome.com/5cc347fe9d.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -37,6 +39,9 @@
         crossorigin="anonymous"></script>
         <script src="https://js.stripe.com/v3/"></script>
         <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
 
 <!--- Favicon --->
         <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
