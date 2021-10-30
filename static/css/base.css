@@ -703,7 +703,7 @@ input[type=text],input[type=email], select, textarea {
 
 button, .cta-comment {
   background-color: #fff3e0;
-  color: #fff9f9;
+  color: black;
   text-transform: uppercase;
   padding: 10px 20px;
   border: none;
@@ -823,7 +823,7 @@ select option[value=""] {
     color: grey !important;
 }
 
-/*------ Loading overlay ------*/
+/*------ Overlay ------*/
 
 #loading-overlay {
     display: none;
@@ -832,7 +832,7 @@ select option[value=""] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(241, 193, 137, 0.85);
     z-index: 9999;
 }
 
@@ -843,6 +843,7 @@ select option[value=""] {
     margin: 0;
     height: 100%;
 }
+
 .paid-order-details {
     width: 70%;
     margin: auto;
@@ -952,13 +953,13 @@ select option[value=""] {
 /*------ Reviews ------*/
 
 .btn-outline-secondary {
-    color: #c19c77;
+    color: black;
     border: 2px solid #c19c77;
 }
 
 .btn-outline-secondary:hover {
     background-color: #c19c77;
-    color: #fff9f9;
+    color: black;
 }
 
 .btn-secondary {
@@ -970,7 +971,7 @@ select option[value=""] {
 
 .btn-secondary:hover {
     background-color: #fff3e0;
-    color: #fff9f9;
+    color: black;
     border: solid 2px #fff3e0;
 }
 
@@ -983,7 +984,7 @@ select option[value=""] {
 
 .btn-primary:hover {
     background-color: #c19c77;
-    color: var(--black);
+    color: black;
     border: solid 2px #c19c77;
 }
 
