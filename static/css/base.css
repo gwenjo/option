@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-    --font-great-vibes: 'Great Vibes', sans-serif;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 html {
@@ -216,7 +216,7 @@ span.badge.rounded-pill {
     margin-top: 20%;
 }
 
-/*-------------------- Homepage/section-1 -------------------*/
+/*-------------------- Homepage Section 1-------------------*/
 
 .home-decor{
     text-align: center;
@@ -1024,18 +1024,13 @@ footer p {
 .test-text {
     font-size: .9rem;
 }
-
-.hand-picked {
-    padding-top: .4rem;
+#home-header, #home-header-tagline {
+    font-size: 45px;
 }
 
 #home-header-h1 {
     font-size: 50px;
     margin-top: 9rem;
-}
-
-#home-header, #home-header-tagline {
-    font-size: 45px;
 }
 
 .title_tabs-text-cart {
