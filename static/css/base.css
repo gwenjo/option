@@ -139,14 +139,14 @@ span.badge.rounded-pill {
 }
 
 .cta-white, .cta-black:hover {
-    background-color: #c19c77;
+    background-color: #fff3e0;
     color: black;
     text-decoration: none;
     border-radius: 0;
 }
 
 .cta-black, .cta-white:hover {
-    background-color: #fff3e0 !important;
+    background-color: #c19c77 !important;
     color: black;
     text-decoration: none;
     border-radius: 0;
@@ -161,13 +161,15 @@ span.badge.rounded-pill {
 }
 
 .cta-comment:hover {
-    background-color: #fff3e0!important;
+    background-color: #c19c77!important;
+    color: black;
 }
 
 .cta-comment {
     text-transform: uppercase!important;
     padding: 10px 25px!important;
     background-color: #fff3e0 !important;
+    color: black;
 }
 
 /*-------------------------- Homepage --------------------------*/
@@ -286,6 +288,7 @@ span.badge.rounded-pill {
 
 .half-right {
     background-color: #fff3e0;
+    color: black;
 } 
 
 .half-left  img,
@@ -485,7 +488,7 @@ h2 {
 
 .btn-block:hover {
     background-color: #c19c77;
-    color: #fff9f9;
+    color: black;
 }
 
 .arrow-up {
@@ -681,7 +684,7 @@ input[type=submit]:hover {
 
 .read-text {
     text-transform: uppercase;
-    color: #fff9f9;
+    color: black;
     background-color: #fff3e0;
     font-size: 1rem;
     border: 1px solid #000000;
@@ -930,7 +933,7 @@ select option[value=""] {
 }
 
 .text-decoration-none {
-    border: 0!important;
+    border: black !important;
     background-color: #fff9f9;
 }
 
