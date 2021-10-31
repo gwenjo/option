@@ -10,7 +10,7 @@
             <h2 class="logo-font">Checkout</h2>
         </div>
     </div>
-    <!-- title tabs -->
+<!--- Title Tabs --->
     <div class="container">
         <div class="row shop-top-row">
             <div class="col-12">
@@ -28,7 +28,7 @@
             </div>
         </div>
     </div>
-    <!-- Product count/information -->
+<!--- Product count/information --->
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6 order-lg-last mb-5 col-sm-12">
@@ -75,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <!-- checkout form -->
+            <!--- checkout form --->
             <div class="col-12 col-lg-6">
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
@@ -109,11 +109,11 @@
                     </fieldset>
                     <fieldset class="px-3">
                         <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
-                        <!-- A Stripe card element -->
+                        <!--- A Stripe card element --->
                         <div class="mb" id="card-element"></div>
-                        <!-- Used to display form errors -->
+                        <!--- Used to display form errors --->
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
-                        <!-- Pass the client secret to the view  -->
+                        <!--- Pass the client secret to the view --->
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
                     <div class="submit-button text-right mt-5 mb-2">
@@ -132,7 +132,7 @@
         </div>
     </div>
 </div>
-<!-- Loading overlay -->
+<!--- Loading Overlay --->
 <div id="loading-overlay">
     <h1 class="text-light logo-font loading-spinner">
         <span class="icon">

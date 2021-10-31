@@ -8,7 +8,7 @@
                 <p class="my-0"></p>
             </div>
         </a>
-        <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
+        <div class="dropdown-menu border-0 p-3 rounded-0 my-0 w-100" aria-labelledby="mobile-search">
             <form class="form" method="GET">
                 <div class="input-group w-100">
                     <input class="form-control border border-black rounded-0" type="text" name="q"
@@ -24,7 +24,7 @@
             </form>
         </div>
     </li>
-<!--- user account --->
+<!--- User--->
     <li class="list-inline-item dropdown">
         <a class="nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -49,11 +49,17 @@
     </li>
 <!--- Shopping Bag --->
     <li class="list-inline-item">
-        <a href="{% url 'view_bag' %}" class="shopping-bag-icon nav-link d-block d-lg-none">
-            <i class="fas fa-shopping-bag"></i>
-            {% if bag_items %}
-            <span class="badge rounded-pill">{{ product_count }}</span>
-            {% endif %}
+        <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
+            <div class="text-center">
+                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                <p class="my-0">
+                    {% if grand_total %}
+                        € {{ grand_total|floatformat:2 }}
+                    {% else %}
+                        €0.00
+                    {% endif %}
+                </p>
+            </div>
         </a>
     </li>
     </ol>
