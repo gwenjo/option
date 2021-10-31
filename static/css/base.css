@@ -849,11 +849,11 @@ select option[value=""] {
 }
 
 .btn-file input[type="file"] {
+    min-width: 100%;
+    min-height: 100%;
     position: absolute;
     top: 0;
     right: 0;
-    min-width: 100%;
-    min-height: 100%;
     opacity: 0;
     cursor: pointer;
 }
@@ -871,11 +871,11 @@ select option[value=""] {
 
 /* from Bulma */
 .icon {
+    height: 1.5rem;
+    width: 1.5rem;
     align-items: center;
     display: inline-flex;
     justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
 }
 
 /*------------------------- Reviews --------------------------*/
@@ -892,13 +892,13 @@ select option[value=""] {
 
 .btn-secondary {
     color: black;
-    background-color: #fff3e0;
+    background-color: #c19c77;
     border-radius: 0;
     border: solid 2px #fff3e0;
 }
 
 .btn-secondary:hover {
-    background-color: #fff3e0;
+    background-color: #c19c77;
     color: black;
     border: solid 2px #fff3e0;
 }
@@ -906,18 +906,18 @@ select option[value=""] {
 .btn-primary {
     color: black;
     background-color: #c19c77;
-    border-color: #c19c77;
+    border-color: #fff3e0;
     border-radius: 0;
+}
+
+.border {
+    border: 1px solid black !important;
 }
 
 .btn-primary:hover {
     background-color: #c19c77;
     color: black;
-    border: solid 2px #c19c77;
-}
-
-.border {
-    border: 1px solid black !important;
+    border: solid 2px #fff3e0;
 }
 
 .text-decoration-none {
@@ -930,15 +930,19 @@ select option[value=""] {
 footer {
     background-color: #c19c77;
     color: #fff9f9;
-    min-height: 130px;
     margin-top: 4rem;
+    min-height: 130px;
 }
 
 .footer-link {
     text-transform: uppercase;
-    display: block;
     color: #fff9f9;
+    display: block;
     padding: .2rem;
+}
+
+.footer-link-brand {
+    text-transform: none;
 }
 
 .footer-link:hover {
@@ -946,17 +950,13 @@ footer {
     color: #fff9f9;
 }
 
-.footer-link-brand {
-    text-transform: none;
+.footer-row {
+    padding-top: 35px;
+    margin: 0;
 }
 
 footer p {
     margin-bottom: 0;
-}
-
-.footer-row {
-    padding-top: 35px;
-    margin: 0;
 }
 
 .mb-7 {
@@ -970,8 +970,8 @@ footer p {
 }
 
 .social-media {
-    display: flex;
     justify-content: space-between;
+    display: flex;
     margin-top: 16px;
 }
 
@@ -985,7 +985,7 @@ footer p {
     color: #fff9f9;
 }
 
-/*----------------------- Responsiveness --------------------*/
+/*----------------------- Media Queries/ Responsiveness --------------------*/
 
 @media (max-width: 375px){
 .navbar-light .navbar-toggler {
@@ -1127,7 +1127,6 @@ footer p {
     padding-left: .5rem;
 }
 }
-
 
 @media (min-width: 767px){
 .nav-center {
