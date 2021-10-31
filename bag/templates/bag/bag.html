@@ -7,25 +7,25 @@
 <div class="container-fluid">
     <div class="row-products">
         <div class="col text-center pb-1">
-            <h2 class="logo-font">Shopping Cart</h2>
+            <h2 class="logo-font">Shopping Bag</h2>
         </div>
     </div>
 </div>
-<!--- Title Tabs --->
+<!--- title Tabs --->
 <div class="row shop-top-row">
     <div class="col-12">
         <div class="title_tabs">
-            <p class="title_tabs-text-cart">
+            <p class="title_tabs-text-bag">
                 <a href="{% url 'home' %}" class="tabs-link">Home</a>
                 |
-                <a href="{% url 'products' %}" class="tabs-link">Shop</a>
+                <a href="{% url 'products' %}" class="tabs-link">Products</a>
                 |
-                <span class="active-tabs">Shopping cart</span>
+                <span class="active-tabs">Shopping Bag</span>
             </p>
         </div>
     </div>
 </div>
-<!--- shopping cart --->
+<!--- Shopping Bag--->
 <div class="row">
     <div class="col">
         {% if bag_items %}
@@ -112,8 +112,8 @@
     </table>
 </div>
 {% else %}
-<!--- empty shopping cart --->
-<p class="empty-cart">You haven't added any products to your cart yet. Check out what we have in our shop!
+<!--- Empty Bag --->
+<p class="empty-bag">There are no products in your bag yet. Look at our products!
 </p>
 <div class="col-12">
     <div class="d-flex justify-content-center">

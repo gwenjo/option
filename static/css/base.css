@@ -2,14 +2,7 @@
 
 /*----------------- Overal Body-------------------*/
 
-:root {
-    --font-playfair-display: 'Archivo Narrow', sans-serif;
-    --font-great-vibes: 'Cookie', sans-serif;
-    --font-poppins: 'Open Sans' sans-serif;
-    --color-black: #000000;
-    --color-light-black: #313639;
-    --border-black: 1px solid black;
-}
+
 
 .container-fluid {
     padding: 0;
@@ -51,7 +44,7 @@ main {
     font-size: 1.2rem;
 }
 
-.fa-shopping-cart:before {
+.fa-shopping-bag:before {
     font-size: 1.7rem;
 }
 
@@ -81,7 +74,6 @@ main {
     transform: translate(-50%, -50%);
 }
 
-
 #logo:hover {
     text-decoration: none;
 }
@@ -108,7 +100,7 @@ main {
     margin-right: auto;
 }
 
-.fa-shopping-basket:before {
+.fa-shopping-bag:before {
     font-size: 1.6rem;
 }
 
@@ -139,8 +131,8 @@ span.badge.rounded-pill {
 }
 
 .cta-white, .cta-black:hover {
-    background-color: #fff3e0;
-    color: black;
+    background-color: #c19c77;
+    color: #fff9f9;
     text-decoration: none;
     border-radius: 0;
 }
@@ -322,13 +314,13 @@ h2 {
 /*--------------------- Products Page ------------------*/
 
 .logo-font {
-    padding-top: 1.3rem;
-    padding-bottom: 1.1rem;
-    text-transform: uppercase;
+    font-weight: 500;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     letter-spacing: .1rem;
     font-size: 3rem;
     color: #8d6e63;
-    font-weight: 500;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding-top: 1.3rem;
+    padding-bottom: 1.1rem;
+    text-transform: uppercase;
 }
 
 .row-products {
@@ -337,10 +329,6 @@ h2 {
 
 .offset-1 {
     margin-top: 2.5rem;
-}
-
-.head-flowers {
-    width: 11.5rem;
 }
 
 .card-img-top {
@@ -420,9 +408,9 @@ h2 {
     color: black;
 }
 
-/*------------------ Empty Cart Page ----------------*/
+/*------------------ Empty Bag ----------------*/
 
-.empty-cart {
+.empty-bag {
     margin: auto;
     padding: 30px;
     max-width: 600px;
@@ -430,7 +418,7 @@ h2 {
     font-size: 1.2rem;
 }
 
-.title_tabs-text-cart {
+.title_tabs-text-bag {
     text-transform: uppercase;
     font-size: 1.1rem;
     margin-left: 5rem;
@@ -1036,7 +1024,7 @@ footer p {
     margin-top: 9rem;
 }
 
-.title_tabs-text-cart {
+.title_tabs-text-bag {
     margin-left: 0; 
 }
 
@@ -1077,11 +1065,6 @@ footer p {
 }
 .nav-center {
     margin-top: .7rem;
-}
-
-.head-flowers {
-    width: 6.5rem;
-    padding-top: 4.5rem;
 }
 
 .logo-font {
@@ -1130,7 +1113,8 @@ footer p {
 .product-details-container {
     margin-left: 2rem;
 }
-.fa-shopping-basket:before {
+
+.fa-shopping-bag:before {
     color: black;
 }
 
@@ -1155,9 +1139,11 @@ footer p {
 .nav-link-main {
     padding-left: 1rem;
 }
-.fa-shopping-basket:before {
+
+.fa-shopping-bag:before {
     color: black;
 }
+
 .footer-row {
     padding-bottom: 1rem;
 }
@@ -1165,35 +1151,29 @@ footer p {
     border: 1px solid black;
     margin-left: 1rem;
 }
-.head-flowers {
-    width: 9rem;
-    padding-top: 4.3rem;
-}
+
 .about-text {
     font-size: 1.3rem;
 }
 }
 
 @media(max-width:768px) {
-    .fa-arrow-right:before, .fa-arrow-left:before {
-        padding: 0.8rem;
-    }
-    .hand-picked {
-    padding: 0;
-    font-size: 1.5rem;
-    }
-    .section-2-p {
+.fa-arrow-right:before, .fa-arrow-left:before {
+    padding: 0.8rem;
+}
+ 
+.section-2-p {
     font-size: .9rem;
     padding: 0;
-    }
-    .section-cta {
-        padding: 5px 0px 30px;
-    }
+}
 
-    .div-line-item {
-        margin-left: .4rem;
-    }
+.section-cta {
+    padding: 5px 0px 30px;
+}
 
+.div-line-item {
+    margin-left: .4rem;
+    }
 }
 
 @media(max-width:767px) {
@@ -1241,7 +1221,7 @@ footer p {
 
 /* -----------Slightly larger container on xl screens------------*/
 @media (min-width: 1200px) {
-  .container {
+.container {
     max-width: 80%;
   }
 }
@@ -1291,8 +1271,8 @@ footer p {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff9f9;
-    background-color: #231f20;
+	background-color: #c19c77;
+    color: #fff9f9;
     border-color: #231f20;
 }
 
@@ -1301,15 +1281,11 @@ footer p {
 }
 
 @media (min-width: 1199px) {
-    .header-content {
+.header-content {
     margin-top: 20%;
-    }
+}
 
-    .head-flowers {
-    width: 11rem;
-    }
-
-    .nav-center {
+.nav-center {
     padding-top: 0;
-    }
+}
 }
