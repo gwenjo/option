@@ -408,21 +408,7 @@ h2 {
     color: black;
 }
 
-/*------------------ Empty Bag ----------------*/
 
-.empty-bag {
-    margin: auto;
-    padding: 30px;
-    max-width: 600px;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.title_tabs-text-bag {
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    margin-left: 5rem;
-}
 
 /*----------------------- Shopping bag -------------------*/
 
@@ -450,6 +436,20 @@ h2 {
 
 .form-group-buttons {
     margin-bottom: .3rem;
+}
+
+.empty-bag {
+    margin: auto;
+    padding: 30px;
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.title_tabs-text-bag {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-left: 5rem;
 }
 
 /*----------------------- Toasts ----------------------*/
@@ -523,6 +523,38 @@ fieldset .form-control, #card-element {
     font-weight: 400;
 }
 
+/*---------------------- Overlay -------------------------*/
+
+#loading-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(241, 193, 137, 0.85);
+    z-index: 9999;
+}
+
+.loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+
+.paid-order-details {
+    width: 70%;
+    margin: auto;
+}
+
+.general-container {
+    max-width: 650px;
+    margin-bottom: 65px;
+    margin-top: 50px;
+}
+
 /*-------------------- About page ----------------------*/
 
 .about-heading {
@@ -594,7 +626,7 @@ fieldset .form-control, #card-element {
     opacity: unset;
 }
 
-/*----------------------- Contact Form Page ---------------------*/
+/*----------------------- Contact Page ---------------------*/
 
 div#map {min-height: 360px;}
 
@@ -751,39 +783,9 @@ select option[value=""] {
     color: grey !important;
 }
 
-/*---------------------- Overlay -------------------------*/
 
-#loading-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(241, 193, 137, 0.85);
-    z-index: 9999;
-}
 
-.loading-spinner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    height: 100%;
-}
-
-.paid-order-details {
-    width: 70%;
-    margin: auto;
-}
-
-.general-container {
-    max-width: 650px;
-    margin-bottom: 65px;
-    margin-top: 50px;
-}
-
-/*--------------------- Allauth templates --------------*/
+/*--------------------- Allauth Templates --------------*/
 
 .div-login-form {
     margin-top: .7rem;
