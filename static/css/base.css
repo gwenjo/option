@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cookie&family=Open+Sans:wght@200&display=swap');
 
 /*----------------- Overal Body-------------------*/
-
-
-
 .container-fluid {
     padding: 0;
     margin: 0;
@@ -116,18 +113,16 @@ span.badge.rounded-pill {
     font-size: .8rem;
     text-decoration: none;
     padding-bottom: .4rem;
-
 }
 
 /*-------------------- Buttons ---------------------*/
 
 .cta {
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase;
     padding: 15px 30px;
     border: #231f20;
     border-radius: 0;
-
 }
 
 .cta-white, .cta-black:hover {
@@ -145,15 +140,15 @@ span.badge.rounded-pill {
 }
 
 .cta-green, .cta-green:hover {
-    background-color: #fff3e0;
-    color: black;
     text-decoration: none;
     margin-right: .5rem;
+    background-color: #fff3e0;
+    color: black;
     border-radius: 0;
 }
 
 .cta-comment:hover {
-    background-color: #c19c77!important;
+    background-color: #c19c77 !important;
     color: black;
 }
 
@@ -173,7 +168,7 @@ span.badge.rounded-pill {
 }
 
 #homepage-header {
-    background: url('/media/wedding_theme.jpeg') no-repeat center center fixed;
+    background: url('/media/bday-2.jpg') no-repeat center center fixed;
     height: 800px;
     background-size: cover;
     margin-bottom: 4.5rem;
@@ -195,13 +190,12 @@ span.badge.rounded-pill {
     font-weight: 100;
     font-size: 70px;
     color: black;
-    
 }
 
 #home-header {
     font-weight: 100;
     font-size: 70px;
-    color: var(--color-light-black);
+    color: black;
     font-family: 'Cookie', sans-serif;
     line-height: 1rem;
 }
@@ -215,7 +209,7 @@ span.badge.rounded-pill {
 .home-decor{
     text-align: center;
     font-family: 'Cookie', sans-serif;
-    color: var(--color-light-black);
+    color: black;
     font-size: 2.6rem;
 }
 
@@ -407,8 +401,6 @@ h2 {
     float: left;
     color: black;
 }
-
-
 
 /*----------------------- Shopping bag -------------------*/
 
@@ -672,7 +664,7 @@ button, .cta-comment {
 }
 
 input[type=submit]:hover {
-  background-color: #c19c77;
+    background-color: #c19c77;
 }
 
 .scroll-to-top {
@@ -989,6 +981,13 @@ footer p {
 
 /*----------------------- Media Queries/ Responsiveness --------------------*/
 
+/* -----------Slightly larger container on xl screens------------*/
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+      }
+    }
+
 @media (max-width: 375px){
 .navbar-light .navbar-toggler {
     padding: .25rem .75rem;
@@ -1006,28 +1005,13 @@ footer p {
 .font-heading {
     font-size: 2.1rem;
 }
+
 .col-sm-6 {
     padding: 0;
 }
 
 #sort-selector {
     margin-right: 1.2rem;
-}
-
-.test-text {
-    font-size: .9rem;
-}
-#home-header, #home-header-tagline {
-    font-size: 45px;
-}
-
-#home-header-h1 {
-    font-size: 50px;
-    margin-top: 9rem;
-}
-
-.title_tabs-text-bag {
-    margin-left: 0; 
 }
 
 .home-decor, .about-heading {
@@ -1041,6 +1025,19 @@ footer p {
 .row {
     margin-right: 0;
     margin-left: 0;
+}
+
+#home-header, #home-header-tagline {
+    font-size: 45px;
+}
+
+#home-header-h1 {
+    font-size: 50px;
+    margin-top: 9rem;
+}
+
+.title_tabs-text-bag {
+    margin-left: 0; 
 }
 
 .footer-row {
@@ -1134,9 +1131,11 @@ footer p {
 .nav-center {
     padding-top: .5rem;
 }
+
 .header-content {
     margin-top: 40%;
 }
+
 .nav-link-main {
     padding-left: 1rem;
 }
@@ -1148,6 +1147,7 @@ footer p {
 .footer-row {
     padding-bottom: 1rem;
 }
+
 .navbar-toggler {
     border: 1px solid black;
     margin-left: 1rem;
@@ -1158,73 +1158,68 @@ footer p {
 }
 }
 
+@media(max-width:767px) {
+#image-caption {
+    font-style: normal;
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+    }
+}
+
+@media(max-width:767px) {
+
+}
+
+@media(max-width:767px) {
+.carousel-caption img {
+    width: 4rem;
+    border-radius: 4rem;
+    margin-top: 1rem;
+}   
+
+.carousel-caption {
+    position: initial;
+    z-index: 10;
+    padding: 3rem 2rem;
+    color: rgba(78, 77, 77, 0.856);
+    text-align: center;
+    font-size: 0.7rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.5rem;
+    }
+}
+
 @media(max-width:768px) {
 .fa-arrow-right:before, .fa-arrow-left:before {
     padding: 0.8rem;
 }
- 
+     
 .section-2-p {
     font-size: .9rem;
     padding: 0;
 }
-
+    
 .section-cta {
     padding: 5px 0px 30px;
 }
-
+    
 .div-line-item {
     margin-left: .4rem;
     }
 }
 
-@media(max-width:767px) {
-    #image-caption {
-        font-style: normal;
-        font-size: 0.6rem;
-        margin-top: 0.5rem;
-    }
-}
-
-@media(max-width:767px) {
-    .carousel-caption img {
-        width: 4rem;
-        border-radius: 4rem;
-        margin-top: 1rem;
-    }
-}
-
-@media(max-width:767px) {
-    .carousel-caption {
-        position: initial;
-        z-index: 10;
-        padding: 3rem 2rem;
-        color: rgba(78, 77, 77, 0.856);
-        text-align: center;
-        font-size: 0.7rem;
-        font-style: italic;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-}
-
 @media(min-width:992px) {
-    .about-image {
+.about-image {
     width: 100%;
     height: 100%;
 }
-    .about-heading {
+.about-heading {
     font-size: 2rem;
-    }
-    .about-text {
-    font-size: 1rem;
-    }
 }
-
-/* -----------Slightly larger container on xl screens------------*/
-@media (min-width: 1200px) {
-.container {
-    max-width: 80%;
-  }
+.about-text {
+    font-size: 1rem;
+}
 }
 
 /* -----------------Allauth form formatting--------------------- */

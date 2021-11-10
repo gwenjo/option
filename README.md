@@ -184,7 +184,7 @@ On the home page there is a button that takes you directly to the products page.
 
 * Blog post page is a single page showing all of the details from a relevant blog post. It includes the body text and any images that may or may not be attached with the blog post.
 
-![comments](https://github.com/Brianconn71/fit-as-a-fiddle/blob/master/Readme%20Images/comments.JPG)
+![comments]()
 
 * The blog post also shows any comments that have been made on the post. any user can read comments but only authenticated users can leave a comment
 

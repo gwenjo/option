@@ -1,13 +1,10 @@
-// --- Immediately invoked function for email.js ---
-(function(){emailjs.init("user_qI0f2g6tNqj3cj8yeKtiz");})();
-
 // --- Sends e-mail to my e-mail adress
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
-    emailjs.send("gmail", "contact", {
+    emailjs.send("service_iwftkus", "fancydaydesign", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
-        "contact_request": contactForm.projectsummary.value
+        "contactform_request": contactForm.projectsummary.value
     })
         .then(
             function success() {
@@ -23,7 +20,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 
 // --- Changes text in button to notify user that e-mail was sent successfuly (200) ---
 function notification() {
-    $("#submit").text("E-mail submitted!");
+    $("#submit").text("Request Submitted!");
 }
 
 // --- Refreshes form ONLY ---
@@ -34,5 +31,5 @@ function refresh() {
 
 // --- E-mail failed to sent (404) ---
 function failToSend(){
-    $("#submit").text("Failed to submit. Refresh page");
+    $("#submit").text("Failed to submit. Try again");
 }
